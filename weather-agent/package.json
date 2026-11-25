@@ -1,0 +1,19 @@
+{
+  "name": "weather-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/weather.ts",
+    "start:env": "node --env-file=.env src/weather.ts",
+    "test": "node --test src/weather.test.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.14.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "typescript": "^7.0.2"
+  }
+}
